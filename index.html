@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link type="text/css" rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/showImg.js"></script>
+	<script type="text/javascript" src="js/template.js"></script>
+</head>
+<body>
+	<div class="header">
+		<img src="images/logo.png" alt="" class="header-img">
+		<p class="fl">搞旅游的亲情奉献 · 美景在心</p>
+	</div>
+	<div class="banner">
+		<img src="images/bg_one.jpg" alt="" class="banner-img">
+		<p class="fontStyle">去过的人形容云南<br />说它云梦萦绕，满江春意</p>
+	</div>
+	<div class="img-container" id="content">
+		<div class="title-container">
+			<div class="title-des clear"><p>你早该去过</p><p>有些风景</p></div>
+			<p class="sina">@搞旅游的微博</p>
+		</div>
+		<div class="list-container">
+			<div class="triangle-left"></div>
+			<div class="describle">
+				<h2 class="fl">尽在九寨</h3>
+				<h3 class="clear fl"><span>是一种什么样的感受</span><span>同时看到天和地</span></h3>
+				<div class="detail fl">
+					<p>2-3h的客栈服务即可换来</p>
+					<p class="small">·3天2夜的自由行 ·免费提供食宿</p>
+					<p>无任何额外开销，尽情领略九寨风情</p>
+				</div>
+			</div>
+			<img src="images/bg_two.jpg" alt="">
+		</div>
+		<div class="list-container">
+			<div class="triangle-right"></div>
+			<div class="describle fr right">
+				<h3 class="clear fr"><span>还能记起白娘子吗</span><span>她曾经和许仙在这里生活</span></h3>
+				<h2 class="fr">梦之西湖</h3>
+				<div class="detail fr">
+					<p>2-3h的客栈服务即可换来</p>
+					<p class="small">·3天2夜的自由行 ·免费提供食宿</p>
+					<p>无任何额外开销，轻松领略西湖十景</p>
+				</div>
+			</div>
+			<img src="images/bg_three.jpg" alt="">
+		</div>
+	</div>
+	<div class="footer">
+		<p>点击加载更多</p>
+	</div>
+<script id="template" type="text/html">
+	    {{each Returns as value i}}
+	    	{{if i%2==0}}
+	    		<div class="list-container">
+					<div class="triangle-left"></div>
+					<div class="describle">
+						<h2 class="fl">{{value.title}}</h3>
+						<h3 class="clear fl"><span>{{value.subtitle.subtitle1}}</span><span>{{value.subtitle.subtitle2}}</span></h3>
+						<div class="detail fl">
+							<p>{{value.detail.detail1}}</p>
+							<p class="small">{{value.detail.detail2}}</p>
+							<p>{{value.detail.detail3}}</p>
+						</div>
+					</div>
+					<img src={{value.bgimg}}>
+				</div>
+			{{else}}
+				<div class="list-container">
+					<div class="triangle-right"></div>
+					<div class="describle fr right">
+						<h3 class="clear fr"><span>{{value.subtitle.subtitle1}}</span><span>{{value.subtitle.subtitle2}}</span></h3>
+						<h2 class="fr">{{value.title}}</h2>
+						<div class="detail fr">
+							<p>{{value.detail.detail1}}</p>
+							<p class="small">{{value.detail.detail2}}</p>
+							<p>{{value.detail.detail3}}</p>
+						</div>
+					</div>
+					<img src={{value.bgimg}}>
+				</div>
+			{{/if}}
+	    {{/each}}
+</script>
+</body>
+</html>

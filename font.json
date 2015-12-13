@@ -1,0 +1,27 @@
+{
+	"Params":{
+		"type":"",
+		"number":"3",
+		"curPage":"1"
+	},
+	"Returns":[
+		{
+			"bgimg":"images/bg_two.jpg",
+			"title":"尽在九寨",
+			"subtitle":{"subtitle1":"是一种什么样的感受","subtitle2":"同时看到天和地"},
+			"detail":{"detail1":"2-3h的客栈服务即可换来","detail2":"·3天2夜的自由行·免费提供食宿","detail3":"无任何额外开销，尽情领略九寨风情"}
+		},
+		{
+			"bgimg":"images/bg_three.jpg",
+			"title":"梦之西湖",
+			"subtitle":{"subtitle1":"是一种什么样的感受","subtitle2":"同时看到天和地"},
+			"detail":{"detail1":"2-3h的客栈服务即可换来","detail2":"·3天2夜的自由行·免费提供食宿","detail3":"无任何额外开销，尽情领略西湖十景"}
+		},
+		{
+			"bgimg":"images/bg_two.jpg",
+			"title":"尽在九寨",
+			"subtitle":{"subtitle1":"是一种什么样的感受","subtitle2":"同时看到天和地"},
+			"detail":{"detail1":"2-3h的客栈服务即可换来","detail2":"·3天2夜的自由行·免费提供食宿","detail3":"无任何额外开销，尽情领略九寨风情"}
+		}
+	]
+}
